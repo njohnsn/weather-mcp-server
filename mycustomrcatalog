@@ -1,0 +1,33 @@
+version: 2
+name: custom
+displayName: Custom MCP Servers
+registry:
+  weather:
+    description: "Get current weather, forecasts, and convert temperatures using OpenWeather API"
+    title: "Weather API"
+    type: server
+    dateAdded: "2025-09-23T00:00:00Z"
+    image: weather-mcp-server:latest
+    ref: ""
+    readme: ""
+    toolsUrl: ""
+    source: ""
+    upstream: ""
+    icon: ""
+    tools:
+      - name: get_current_weather
+      - name: get_weather_forecast
+      - name: convert_temperature
+    secrets:
+      - name: OPENWEATHER_API_KEY
+        env: OPENWEATHER_API_KEY
+        example: "your-openweather-api-key"
+    metadata:
+      category: productivity
+      tags:
+        - weather
+        - api
+        - forecast
+      license: MIT
+      owner: local
+      
